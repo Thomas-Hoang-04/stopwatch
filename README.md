@@ -36,4 +36,4 @@ _This project was bootstrapped with_ [_Create React App_](https://github.com/fac
 
 _Hosted with GitHub Pages_
 
-_Copyrighted with MIT License_
+_Licensed with MIT License_
