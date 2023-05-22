@@ -1,0 +1,44 @@
+$fw-medium: 400;
+$fw-standard: 500;
+$fw-standard-1: 600;
+$fw-bold: 700;
+$fw-extra: 800;
+
+$fs-html: 1rem;
+$fs-standard: 1.125rem;
+$fs-standard-1: 1.25rem;
+$fs-medium: 1.5rem;
+$fs-large: 1.75rem;
+$fs-extra: 2rem;
+$fs-padding: 2.25rem;
+
+button {
+  border: none;
+  color: hsl(60, 52%, 94%);
+  font-size: calc($fs-medium + 0.1rem);
+  font-weight: $fw-standard-1;
+  margin: 0.5rem 0.7rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+
+button[name="Start"] {
+  background-color: hsl(204, 59%, 40%);
+}
+
+button[name="Continue"] {
+  background-color: hsl(192, 63%, 36%);
+}
+
+button[name="Lap"] {
+  background-color: hsl(173, 49%, 34%);
+}
+
+button[name="Pause"] {
+  background-color: hsla(24, 70%, 52%, 0.981);
+}
+
+button[name="Stop"] {
+  background-color: hsl(335, 40%, 55%);
+}

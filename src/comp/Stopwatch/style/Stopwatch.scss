@@ -1,0 +1,163 @@
+$fw-medium: 400;
+$fw-standard: 500;
+$fw-standard-1: 600;
+$fw-bold: 700;
+$fw-extra: 800;
+
+$fs-html: 1rem;
+$fs-standard: 1.125rem;
+$fs-standard-1: 1.25rem;
+$fs-medium: 1.5rem;
+$fs-large: 1.75rem;
+$fs-extra: 2rem;
+$fs-padding: 2.25rem;
+
+$list-width: 37.5rem;
+$list-margin: 0.75rem;
+$list-padding: 1rem;
+
+$blur: 0.75px;
+
+$theme-light: hsl(180, 59%, 22%);
+$theme-dark: hsl(178, 50%, 73%);
+
+$timer-light: hsl(189, 38%, 24%);
+$timer-dark: hsl(178, 50%, 73%);
+
+$hr-dark: hsl(178, 50%, 73%);
+$hr-light: hsl(176, 52%, 41%);
+
+$flag-header-light: hsl(220, 5%, 11%);
+$flag-header-dark: hsl(225, 20%, 96%);
+
+@mixin flex($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+.stopwatch {
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+  padding: 3rem;
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+}
+
+.theme {
+  $px: 2rem;
+  @include flex(center, space-between);
+  padding: 1rem $px;
+  width: calc($list-width + 3.5 * $px);
+  border: 2.5px solid;
+  border-radius: 100vw;
+  margin: 0.5rem 0 1.5rem;
+  font-style: italic;
+
+  h1 {
+    font-size: calc($fs-standard-1 + 0.1rem);
+    font-weight: $fw-bold;
+    letter-spacing: 0.25px;
+  }
+}
+
+.theme-light {
+  border-color: $theme-light;
+  color: $theme-light;
+}
+
+.theme-dark {
+  border-color: $theme-dark;
+  color: $theme-dark;
+}
+
+.mode-toggle {
+  @include flex(center, center);
+  gap: 1rem;
+  justify-self: right;
+
+  span {
+    @include flex(center, center);
+    gap: 0.25rem;
+  }
+
+  p {
+    font-size: calc($fs-standard-1 + 0.1rem);
+    font-weight: $fw-bold;
+  }
+}
+
+.timer {
+  @include flex(center, center);
+  flex-direction: column;
+
+  & > span {
+    font-family: "Russell Square", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 5rem;
+    flex-grow: 1;
+  }
+
+  .timer-dark {
+    color: $timer-dark;
+  }
+
+  .timer-light {
+    color: $timer-light;
+  }
+
+  .trigger {
+    @include flex(initial, initial);
+    gap: 5rem;
+    margin: 0.5rem 0 1.25rem;
+  }
+}
+
+.flag-section {
+  @include flex(center, center);
+  flex-direction: column;
+}
+
+.flag-header {
+  $index-w: 25%;
+  $time-w: calc((100% - $index-w) / 2);
+  display: grid;
+  width: calc($list-width - $list-margin - $list-padding);
+  grid-template-columns: $index-w $time-w $time-w;
+  margin-top: 0.75rem;
+  font-size: $fs-medium;
+  letter-spacing: 0.3px;
+  font-weight: $fw-standard-1;
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+
+  p {
+    place-self: center;
+  }
+
+  hr {
+    margin: 0.5rem 0 0;
+    width: calc($list-width - $list-margin - $list-padding);
+    height: 0.15rem;
+  }
+
+  hr[name="hr-dark"] {
+    border: solid $hr-dark;
+    background-color: $hr-dark;
+  }
+
+  hr[name="hr-light"] {
+    border: solid $hr-light;
+    background-color: $hr-light;
+  }
+}
+
+.header-dark {
+  color: $flag-header-dark;
+}
+
+.header-light {
+  color: $flag-header-light;
+}

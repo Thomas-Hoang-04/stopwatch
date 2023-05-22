@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/stopwatch/static/css/main.cd22f55f.css",
+    "main.js": "/stopwatch/static/js/main.01e95681.js",
+    "static/css/933.daaf2072.chunk.css": "/stopwatch/static/css/933.daaf2072.chunk.css",
+    "static/js/933.91da8261.chunk.js": "/stopwatch/static/js/933.91da8261.chunk.js",
+    "static/media/PlusJakartaSans-VariableFont_wght.ttf": "/stopwatch/static/media/PlusJakartaSans-VariableFont_wght.e927df8b07a258431c9a.ttf",
+    "static/media/RusselSquareOpti.otf": "/stopwatch/static/media/RusselSquareOpti.357c0a7ddead08ec2a1b.otf",
+    "index.html": "/stopwatch/index.html",
+    "main.cd22f55f.css.map": "/stopwatch/static/css/main.cd22f55f.css.map",
+    "main.01e95681.js.map": "/stopwatch/static/js/main.01e95681.js.map",
+    "933.daaf2072.chunk.css.map": "/stopwatch/static/css/933.daaf2072.chunk.css.map",
+    "933.91da8261.chunk.js.map": "/stopwatch/static/js/933.91da8261.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd22f55f.css",
+    "static/js/main.01e95681.js"
+  ]
+}

@@ -1,0 +1,30 @@
+button {
+  border: none;
+  color: hsl(60, 52%, 94%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.5rem 0.7rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+
+button[name=Start] {
+  background-color: hsl(204, 59%, 40%);
+}
+
+button[name=Continue] {
+  background-color: hsl(192, 63%, 36%);
+}
+
+button[name=Lap] {
+  background-color: hsl(173, 49%, 34%);
+}
+
+button[name=Pause] {
+  background-color: hsla(24, 70%, 52%, 0.981);
+}
+
+button[name=Stop] {
+  background-color: hsl(335, 40%, 55%);
+}/*# sourceMappingURL=Button.css.map */

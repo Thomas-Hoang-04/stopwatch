@@ -1,0 +1,33 @@
+.flag {
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  border-radius: 100vw;
+  font-size: 1.35rem;
+  font-weight: 1.125rem;
+  display: grid;
+  grid-template-columns: 24% 38% 38%;
+}
+.flag span {
+  place-self: center;
+}
+.flag span:last-of-type {
+  margin-left: 0.7rem;
+}
+
+.flag-light {
+  color: hsl(210, 4%, 11%);
+}
+
+.flag-dark {
+  color: hsl(225, 20%, 96%);
+}
+
+.fast {
+  background-color: hsla(180, 64%, 33%, 0.921);
+  color: hsl(225, 20%, 96%);
+}
+
+.slow {
+  background-color: hsla(356, 43%, 47%, 0.963);
+  color: hsl(225, 20%, 96%);
+}/*# sourceMappingURL=Flag.css.map */

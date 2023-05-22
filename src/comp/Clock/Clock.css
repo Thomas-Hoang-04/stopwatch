@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Jost:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro:400,700');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-areas:
+    "time time time clock clock clock clock"
+    "time time time clock clock clock clock"
+    "time time time clock clock clock clock"
+    "time time time clock clock clock clock";
+  overflow: hidden;
+  place-items: center;
+  background: #272727;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    grid-template-areas:
+      "time time time time"
+      "time time time time"
+      "clock clock clock clock"
+      "clock clock clock clock"
+      "clock clock clock clock"
+      "clock clock clock clock";
+  }
+}
+
+.digital-hour {
+  grid-area: time;
+  text-align: center;
+  font-family: Jost, sans-serif;
+  font-size: 4.6em;
+  margin-bottom: .5em;
+  color: antiquewhite;
+}
+
+.clock-display {
+  grid-area: clock;
+  width: 25em;
+  height: 25em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 .2em #5946cf, 0 0 0 .25em #CCF381;
+  padding: 1.1em;
+}
+
+.clock-axis {
+  width: .3em;
+  height: .3em;
+  background-color: rgb(139, 242, 207);
+  z-index: 4;
+  border-radius: 50%;
+}
+
+.clock-hour,
+.clock-minutes,
+.clock-second {
+  position: absolute;
+  transform-origin: bottom;
+  border-radius: 1em;
+  width: .2em;
+}
+
+.clock-hour {
+  height: 6em;
+  background-color: #ffffd2;
+  top: 7.65em;
+  z-index: 1;
+  animation: time 43200s linear infinite;
+  -webkit-animation: time 43200s linear infinite;
+}
+
+.clock-minutes {
+  height: 8em;
+  top: 5.65em;
+  background-color: #c5fad5;
+  z-index: 2;
+  animation: time 3600s linear infinite;
+  -webkit-animation: time 3600s linear infinite;
+}
+
+.clock-second {
+  height: 9em;
+  top: 4.65em;
+  background-color: #aa96da;
+  z-index: 3;
+  animation: time 60s infinite steps(60);
+  -webkit-animation: time 60s infinite steps(60);
+}
+
+.clock-indicator {
+  height: 25em;
+  width: .1em;
+  background-color: none;
+  border-top: .15em solid cyan;
+  border-bottom: .15em solid cyan;
+  position: absolute;
+  border-radius: 1em;
+}
+
+.clock-indicator:nth-of-type(5n) {
+  border-top: .6em solid beige;
+  border-bottom: .6em solid beige;
+  height: 24.5em;
+}
+
+.clock-indicator:nth-of-type(15n) {
+  border-top: 1.3em solid rgb(237, 161, 124);
+  border-bottom: 1.3em solid rgb(237, 161, 124);
+  width: .2em;
+  height: 23.5em;
+}
+
+.number-indicator {
+  position: absolute;
+  color: rgb(237, 161, 124);
+  font-size: 1.8em;
+  font-family: Jost, sans-serif;
+}
+
+.number-indicator:nth-of-type(1) {
+  right: 1.3em;
+}
+
+.number-indicator:nth-of-type(2) {
+  bottom: 1em;
+}
+
+.number-indicator:nth-of-type(3) {
+  left: 1.3em;
+}
+
+.number-indicator:nth-of-type(4) {
+  top: 1em;
+}
+
+.clock-indicator:nth-of-type(1) {
+  transform: rotateZ(calc(6deg * 1));
+}
+
+.clock-indicator:nth-of-type(2) {
+  transform: rotateZ(calc(6deg * 2));
+}
+
+.clock-indicator:nth-of-type(3) {
+  transform: rotateZ(calc(6deg * 3));
+}
+
+.clock-indicator:nth-of-type(4) {
+  transform: rotateZ(calc(6deg * 4));
+}
+
+.clock-indicator:nth-of-type(5) {
+  transform: rotateZ(calc(6deg * 5));
+}
+
+.clock-indicator:nth-of-type(6) {
+  transform: rotateZ(calc(6deg * 6));
+}
+
+.clock-indicator:nth-of-type(7) {
+  transform: rotateZ(calc(6deg * 7));
+}
+
+.clock-indicator:nth-of-type(8) {
+  transform: rotateZ(calc(6deg * 8));
+}
+
+.clock-indicator:nth-of-type(9) {
+  transform: rotateZ(calc(6deg * 9));
+}
+
+.clock-indicator:nth-of-type(10) {
+  transform: rotateZ(calc(6deg * 10));
+}
+
+.clock-indicator:nth-of-type(11) {
+  transform: rotateZ(calc(6deg * 11));
+}
+
+.clock-indicator:nth-of-type(12) {
+  transform: rotateZ(calc(6deg * 12));
+}
+
+.clock-indicator:nth-of-type(13) {
+  transform: rotateZ(calc(6deg * 13));
+}
+
+.clock-indicator:nth-of-type(14) {
+  transform: rotateZ(calc(6deg * 14));
+}
+
+.clock-indicator:nth-of-type(15) {
+  transform: rotateZ(calc(6deg * 15));
+}
+
+.clock-indicator:nth-of-type(16) {
+  transform: rotateZ(calc(6deg * 16));
+}
+
+.clock-indicator:nth-of-type(17) {
+  transform: rotateZ(calc(6deg * 17));
+}
+
+.clock-indicator:nth-of-type(18) {
+  transform: rotateZ(calc(6deg * 18));
+}
+
+.clock-indicator:nth-of-type(19) {
+  transform: rotateZ(calc(6deg * 19));
+}
+
+.clock-indicator:nth-of-type(20) {
+  transform: rotateZ(calc(6deg * 20));
+}
+
+.clock-indicator:nth-of-type(21) {
+  transform: rotateZ(calc(6deg * 21));
+}
+
+.clock-indicator:nth-of-type(22) {
+  transform: rotateZ(calc(6deg * 22));
+}
+
+.clock-indicator:nth-of-type(23) {
+  transform: rotateZ(calc(6deg * 23));
+}
+
+.clock-indicator:nth-of-type(24) {
+  transform: rotateZ(calc(6deg * 24));
+}
+
+.clock-indicator:nth-of-type(25) {
+  transform: rotateZ(calc(6deg * 25));
+}
+
+.clock-indicator:nth-of-type(26) {
+  transform: rotateZ(calc(6deg * 26));
+}
+
+.clock-indicator:nth-of-type(27) {
+  transform: rotateZ(calc(6deg * 27));
+}
+
+.clock-indicator:nth-of-type(28) {
+  transform: rotateZ(calc(6deg * 28));
+}
+
+.clock-indicator:nth-of-type(29) {
+  transform: rotateZ(calc(6deg * 29));
+}
+
+@keyframes time {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes time {
+  to {
+    transform: rotateZ(360deg);
+  }
+}

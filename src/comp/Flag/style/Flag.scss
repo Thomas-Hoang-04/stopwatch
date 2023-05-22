@@ -1,0 +1,59 @@
+$fw-medium: 400;
+$fw-standard: 500;
+$fw-bold: 700;
+$fw-extra: 800;
+
+$fs-html: 1rem;
+$fs-standard: 1.125rem;
+$fs-standard-1: 1.25rem;
+$fs-medium: 1.5rem;
+$fs-large: 1.75rem;
+$fs-extra: 2rem;
+$fs-padding: 2.25rem;
+
+$light: hsl(225, 20%, 96%);
+$dark: hsl(210, 4%, 11%);
+
+@mixin flex($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+.flag {
+  $index-w: 24%;
+  $time-w: calc((100% - $index-w) / 2);
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  border-radius: 100vw;
+  font-size: calc($fs-medium - 0.15rem);
+  font-weight: $fs-standard;
+  display: grid;
+  grid-template-columns: $index-w $time-w $time-w;
+
+  span {
+    place-self: center;
+  }
+
+  span:last-of-type {
+    margin-left: 0.7rem;
+  }
+}
+
+.flag-light {
+  color: $dark;
+}
+
+.flag-dark {
+  color: $light;
+}
+
+.fast {
+  background-color: hsla(180, 64%, 33%, 0.921);
+  color: $light;
+}
+
+.slow {
+  background-color: hsla(356, 43%, 47%, 0.963);
+  color: $light;
+}
