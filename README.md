@@ -28,7 +28,7 @@ Visit my mini project [_here_](https://thomas-hoang-04.github.io/stopwatch/)
 
 ![Stopwatch in Active mode - Light theme](https://raw.githubusercontent.com/Thomas-Hoang-04/stopwatch/main/public/demo/Stopwatch-demo-lightmoderunning.png)
 
-## _**Note**:_
+## _**Note**_
 
 > This Stopwatch is not entirely accurate. This is purely a demo of a React App. _**Use with caution**_
 
