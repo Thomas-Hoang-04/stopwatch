@@ -4,7 +4,7 @@
 
 ## App URL
 
-Visit my mini project [_**here**_](https://thomas-hoang-04.github.io/stopwatch/)
+Visit my mini project [**here**](https://thomas-hoang-04.github.io/stopwatch/)
 
 ## Expected Output
 
