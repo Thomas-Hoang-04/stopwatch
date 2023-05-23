@@ -34,9 +34,7 @@ export default function Clock() {
       1000
     );
 
-    setTime("hour");
-    setTime("minute");
-    setTime("second");
+    ["hour", "minute", "second"].map((hand) => setTime(hand));
 
     return () => clearInterval(digitalTime);
   }, []);
