@@ -1,6 +1,6 @@
 # My Stopwatch App
 
-#### _This is my first Git repo. Please support & provide constructive feedbacks on [My Personal GitHub](https://github.com/Thomas_Hoang_04)_
+#### _This is my first Git repo. Please support & provide constructive feedbacks on [My Personal GitHub](https://github.com/Thomas-Hoang-04)_
 
 ## App URL
 
