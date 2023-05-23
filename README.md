@@ -40,6 +40,6 @@ _**If you may, please leave a comment on how I could improve the accuracy of my 
 
 _This project was bootstrapped with_ [_**Create React App**_](https://github.com/facebook/create-react-app)
 
-_Hosted with_ [_**GitHub Pages**_](https://pages.github.com/)
+_Hosted on_ [_**GitHub Pages**_](https://pages.github.com/)
 
 _Licensed with **MIT License**_
