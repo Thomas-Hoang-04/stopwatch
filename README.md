@@ -30,7 +30,7 @@ Visit my mini project [_here_](https://thomas-hoang-04.github.io/stopwatch/)
 
 ## _**Note**_
 
-> This Stopwatch is not entirely accurate in timing _(Recorded some amount of deviation compared to other stopwatch from **my phone (Android 13)**, **laptop (Windows 11)** and **iPad (iPadOS 15)**)_. _**Use with caution**_
+> This Stopwatch is not entirely accurate in timing _[Recorded some amount of deviation compared to other stopwatch from **my phone (Android 13)**, **laptop (Windows 11)** and **iPad (iPadOS 15)**]_. >_**Use with caution**_
 
 > This is purely a demo of my own React App. 
 
