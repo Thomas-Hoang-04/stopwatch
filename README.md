@@ -38,8 +38,8 @@ _**If you may, please leave a comment on how I could improve the accuracy of my 
 
 ## Contribution Source
 
-_This project was bootstrapped with_ [_Create React App_](https://github.com/facebook/create-react-app).
+_This project was bootstrapped with_ [_**Create React App**_](https://github.com/facebook/create-react-app).
 
-_Hosted with GitHub Pages_
+_Hosted with_ [_**GitHub Pages**_](https://pages.github.com/).
 
 _Licensed with MIT License_
